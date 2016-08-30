@@ -59,7 +59,7 @@ def connection_check():
 def tweet_get():
     tweets = []
     where = ''
-    limit = request.args.get('limit') or '10'
+    limit = request.args.get('limit') or '100'
     offset = request.args.get('offset') or '0'
     poster = request.args.get('poster')
     from_timestamp = request.args.get('from')
